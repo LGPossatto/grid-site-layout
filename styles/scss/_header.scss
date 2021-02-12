@@ -1,0 +1,96 @@
+.nav {
+  background-color: $color-black;
+
+  &__top {
+    .search-box {
+      i {
+        margin-right: 1rem;
+      }
+
+      input {
+        background-color: $color-black;
+        width: 350px;
+        height: 42px;
+
+        border: none;
+        border-bottom: 5px solid $color-highlight-green;
+
+        &::placeholder {
+          color: $color-white;
+          font-size: 1.8rem;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 5px 5px -5px $color-light-green;
+        }
+      }
+    }
+  }
+
+  &__burg {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+
+    span {
+      background-color: $color-white;
+      display: block;
+      width: 100%;
+      height: 20%;
+
+      transition: background-color 0.25s ease-in-out;
+    }
+
+    &:hover {
+      span {
+        background-color: $color-light-green;
+      }
+    }
+  }
+
+  ul li {
+    position: relative;
+
+    a {
+      padding: 1.8rem;
+    }
+
+    &::after {
+      content: "";
+      background-color: $color-highlight-green;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      left: 50%;
+      transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+        left: 0px;
+      }
+    }
+
+    @media (max-width: 1135px) {
+      a {
+        padding: 1rem;
+      }
+
+      &:first-child {
+        a {
+          padding-left: 1.8rem;
+        }
+      }
+
+      &:last-child {
+        a {
+          padding-right: 1.8rem;
+        }
+      }
+    }
+  }
+}

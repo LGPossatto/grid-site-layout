@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-padding {
+  padding: 0 1.8rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fdc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fs-title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fs-text {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 980px) {
+  .fs-menu-text-adj {
+    font-size: 1.3rem;
+  }
+}
+
+.fc-title {
+  color: #8cffd9;
+}
+
+.fc-text {
+  color: #141414;
+}
+
+.fc-invert-text {
+  color: whitesmoke;
+}
+
+.fc-subtext {
+  color: #d5fff1;
+}
+
+@media (min-width: 768px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.nav {
+  background-color: #141414;
+}
+
+.nav__top .search-box i {
+  margin-right: 1rem;
+}
+
+.nav__top .search-box input {
+  background-color: #141414;
+  width: 350px;
+  height: 42px;
+  border: none;
+  border-bottom: 5px solid #8cffd9;
+}
+
+.nav__top .search-box input::-webkit-input-placeholder {
+  color: whitesmoke;
+  font-size: 1.8rem;
+}
+
+.nav__top .search-box input:-ms-input-placeholder {
+  color: whitesmoke;
+  font-size: 1.8rem;
+}
+
+.nav__top .search-box input::-ms-input-placeholder {
+  color: whitesmoke;
+  font-size: 1.8rem;
+}
+
+.nav__top .search-box input::placeholder {
+  color: whitesmoke;
+  font-size: 1.8rem;
+}
+
+.nav__top .search-box input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 5px 5px -5px #d5fff1;
+          box-shadow: 0 5px 5px -5px #d5fff1;
+}
+
+.nav__burg {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.nav__burg span {
+  background-color: whitesmoke;
+  display: block;
+  width: 100%;
+  height: 20%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.nav__burg:hover span {
+  background-color: #d5fff1;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li a {
+  padding: 1.8rem;
+}
+
+.nav ul li::after {
+  content: "";
+  background-color: #8cffd9;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  left: 50%;
+  -webkit-transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+  left: 0px;
+}
+
+@media (max-width: 1135px) {
+  .nav ul li a {
+    padding: 1rem;
+  }
+  .nav ul li:first-child a {
+    padding-left: 1.8rem;
+  }
+  .nav ul li:last-child a {
+    padding-right: 1.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
