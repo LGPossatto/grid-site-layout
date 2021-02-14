@@ -53,4 +53,20 @@
       }
     }
   }
+
+  .side-box {
+    .div-a,
+    .div-b {
+      border: 2px solid $color-black;
+    }
+
+    .div-a {
+      height: 40%;
+    }
+
+    .div-b {
+      margin-top: 1rem;
+      height: 100%;
+    }
+  }
 }

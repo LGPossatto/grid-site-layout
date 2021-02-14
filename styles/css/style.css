@@ -387,4 +387,18 @@ body {
 .recent-news__block .no-img-block .news-wo-img:hover {
   opacity: 0.75;
 }
+
+.recent-news .side-box .div-a,
+.recent-news .side-box .div-b {
+  border: 2px solid #141414;
+}
+
+.recent-news .side-box .div-a {
+  height: 40%;
+}
+
+.recent-news .side-box .div-b {
+  margin-top: 1rem;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
