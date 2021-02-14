@@ -1,0 +1,56 @@
+.recent-news {
+  &__1 {
+    .news-1 {
+      transition: opacity 0.25s ease-in-out;
+
+      h3 {
+        margin: 1rem 0;
+      }
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &__block {
+    .news-w-img {
+      .img-box {
+        overflow: hidden;
+        height: 150px;
+
+        img {
+          height: 100%;
+
+          transition: transform 0.25s ease-in-out;
+        }
+      }
+
+      .text-box {
+        transition: opacity 0.25s ease-in-out;
+      }
+
+      &:hover {
+        .img-box {
+          img {
+            transform: scale(1.1);
+          }
+        }
+
+        .text-box {
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .no-img-block {
+      .news-wo-img {
+        transition: opacity 0.25s ease-in-out;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
