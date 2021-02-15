@@ -44,6 +44,20 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    &-padding-lr {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+
+    &-padding-tb {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+  }
+}
+
 // font-size
 .fs {
   &-title {
@@ -68,6 +82,22 @@ body {
 
     &-menu-text-adj {
       font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fs {
+    &-title {
+      font-size: 2.8rem;
+    }
+
+    &-text {
+      font-size: 1.2rem;
+    }
+
+    &-subtext {
+      font-size: 1rem;
     }
   }
 }
@@ -183,10 +213,18 @@ body {
   &-r-2t3 {
     grid-row: 2 / 3;
   }
+
+  &-r-10 {
+    grid-row: 10;
+  }
+
+  &-r-1t11 {
+    grid-row: 1 / 11;
+  }
 }
 
 // hide on
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hide-on {
     &-desktop {
       display: none;
