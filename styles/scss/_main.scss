@@ -207,19 +207,19 @@
   }
 
   &__box {
-    overflow: hidden;
+    //overflow: hidden;
 
     .carousel-box {
-      transition: transform 0.25s ease-in-out;
+      position: relative;
 
       .videos-pannel {
-        width: 250px;
-        height: 250px;
+        position: absolute;
+        width: 360px;
         margin-right: 2rem;
 
         .img-box {
-          width: 250px;
-          height: 150px;
+          width: 360px;
+          height: 220px;
           overflow: hidden;
 
           img {
@@ -232,6 +232,36 @@
           img {
             transform: scale(1.1);
           }
+        }
+      }
+
+      .hide-left {
+        left: -380px;
+      }
+
+      .hide-right {
+        right: -400px;
+      }
+
+      .active {
+        &-0 {
+          left: 0px;
+        }
+
+        &-1 {
+          left: 380px;
+        }
+
+        &-2 {
+          left: 760px;
+        }
+
+        &-3 {
+          left: 1140px;
+        }
+
+        &-4 {
+          left: 1520px;
         }
       }
     }
