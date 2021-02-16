@@ -16,6 +16,7 @@ li {
 
 html,
 body {
+  background-color: $color-white;
   overflow-x: hidden;
   font-size: 62.5%;
 }
@@ -128,6 +129,10 @@ body {
 // flex
 .flex {
   display: flex;
+
+  &-fww {
+    flex-wrap: wrap;
+  }
 
   &-fdc {
     flex-direction: column;

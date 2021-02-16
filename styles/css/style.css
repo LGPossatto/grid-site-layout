@@ -17,6 +17,7 @@ li {
 
 html,
 body {
+  background-color: whitesmoke;
   overflow-x: hidden;
   font-size: 62.5%;
 }
@@ -109,6 +110,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-fww {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-fdc {
@@ -552,5 +558,76 @@ body {
     margin-left: 0;
     margin-top: 1rem;
   }
+}
+
+.follow-us {
+  background-color: #8cffd9;
+  margin: 50px 0;
+}
+
+.follow-us .follow-us__links {
+  padding: 0.5rem;
+}
+
+.follow-us .follow-us__links a:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.videos__head .move-videos-btn .btn-l,
+.videos__head .move-videos-btn .btn-r {
+  cursor: pointer;
+  background-color: whitesmoke;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 5px solid #141414;
+}
+
+.videos__head .move-videos-btn .btn-l {
+  border-left: 5px solid #141414;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.videos__head .move-videos-btn .btn-r {
+  border-right: 5px solid #141414;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.videos__box {
+  overflow: hidden;
+}
+
+.videos__box .carousel-box {
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.videos__box .carousel-box .videos-pannel {
+  width: 250px;
+  height: 250px;
+  margin-right: 2rem;
+}
+
+.videos__box .carousel-box .videos-pannel .img-box {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.videos__box .carousel-box .videos-pannel .img-box img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.videos__box .carousel-box .videos-pannel:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */

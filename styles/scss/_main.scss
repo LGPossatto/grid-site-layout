@@ -1,3 +1,4 @@
+// recent news ------------------------------------------------------
 .recent-news {
   &__1 {
     .news-1 {
@@ -158,6 +159,80 @@
       .div-b {
         margin-left: 0;
         margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// follow us --------------------------------------------------------
+.follow-us {
+  background-color: $color-highlight-green;
+  margin: 50px 0;
+
+  .follow-us__links {
+    padding: 0.5rem;
+
+    a {
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+// videos -----------------------------------------------------------
+.videos {
+  &__head {
+    .move-videos-btn {
+      .btn-l,
+      .btn-r {
+        cursor: pointer;
+        background-color: $color-white;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        border-bottom: 5px solid $color-black;
+      }
+
+      .btn-l {
+        border-left: 5px solid $color-black;
+        transform: rotate(45deg);
+      }
+
+      .btn-r {
+        border-right: 5px solid $color-black;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__box {
+    overflow: hidden;
+
+    .carousel-box {
+      transition: transform 0.25s ease-in-out;
+
+      .videos-pannel {
+        width: 250px;
+        height: 250px;
+        margin-right: 2rem;
+
+        .img-box {
+          width: 250px;
+          height: 150px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            transition: transform 0.25s ease-in-out;
+          }
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
