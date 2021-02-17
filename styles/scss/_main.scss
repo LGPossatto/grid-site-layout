@@ -16,30 +16,15 @@
 
   &__block-w-img {
     .news-w-img {
+      @include img-text-focus;
+
       .img-box {
         overflow: hidden;
         height: 150px;
 
         img {
+          width: auto;
           height: 100%;
-
-          transition: transform 0.25s ease-in-out;
-        }
-      }
-
-      .text-box {
-        transition: opacity 0.25s ease-in-out;
-      }
-
-      &:hover {
-        .img-box {
-          img {
-            transform: scale(1.1);
-          }
-        }
-
-        .text-box {
-          opacity: 0.75;
         }
       }
     }
@@ -207,32 +192,27 @@
   }
 
   &__box {
-    //overflow: hidden;
+    overflow: hidden;
+    display: none;
 
     .carousel-box {
       position: relative;
+      height: 300px;
 
       .videos-pannel {
         position: absolute;
+        opacity: 0;
         width: 360px;
         margin-right: 2rem;
+
+        transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
 
         .img-box {
           width: 360px;
           height: 220px;
-          overflow: hidden;
-
-          img {
-            width: 100%;
-            transition: transform 0.25s ease-in-out;
-          }
         }
 
-        &:hover {
-          img {
-            transform: scale(1.1);
-          }
-        }
+        @include img-text-focus;
       }
 
       .hide-left {
@@ -240,30 +220,76 @@
       }
 
       .hide-right {
-        right: -400px;
+        left: 1900px;
       }
 
       .active {
         &-0 {
           left: 0px;
+          opacity: 1;
         }
 
         &-1 {
           left: 380px;
+          opacity: 1;
         }
 
         &-2 {
           left: 760px;
+          opacity: 1;
         }
 
         &-3 {
           left: 1140px;
+          opacity: 1;
         }
 
         &-4 {
           left: 1520px;
+          opacity: 1;
         }
       }
     }
+  }
+}
+
+// extra news -------------------------------------------------------
+.extra-news {
+  &__news-box {
+    width: 100%;
+
+    h3 {
+      border-bottom: 2px solid $color-black;
+    }
+
+    .news-box-head {
+      @include img-text-focus;
+
+      width: 100%;
+      margin: 2rem 0;
+
+      .img-box {
+        width: 100%;
+        margin-top: 1rem;
+
+        img {
+          max-height: 250px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .news-wo-img {
+      @include img-text-focus;
+      margin: 2rem 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
   }
 }

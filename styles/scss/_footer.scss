@@ -1,0 +1,26 @@
+.top {
+  background-color: $color-light-grey;
+
+  .h-bold {
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+
+  &__links:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.mid {
+  background-color: $color-grey;
+
+  &__social-links {
+    :not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.bot {
+  background-color: $color-black;
+}
