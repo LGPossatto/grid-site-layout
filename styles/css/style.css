@@ -596,6 +596,11 @@ body {
   border-bottom: 5px solid #141414;
 }
 
+.videos__head .move-videos-btn .btn-l:focus,
+.videos__head .move-videos-btn .btn-r:focus {
+  outline: none;
+}
+
 .videos__head .move-videos-btn .btn-l {
   border-left: 5px solid #141414;
   -webkit-transform: rotate(45deg);
@@ -610,7 +615,6 @@ body {
 
 .videos__box {
   overflow: hidden;
-  display: none;
 }
 
 .videos__box .carousel-box {
